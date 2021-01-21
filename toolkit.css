@@ -1,0 +1,335 @@
+/* BOILERPLATE */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/* BREAKPOINTS */
+
+:root {
+    /* Currently useless inside @media queries until env() variables are available in CSS */
+    --bp-1: 560px;
+    --bp-2: 720px;
+    --bp-3: 1024px;
+    --bp-4: 1200px;
+}
+
+
+/* SCALES */
+
+:root {
+    /* Perfect Fourth */
+    --sc-A: 1.333;
+    /* Perfect Fifth */
+    --sc-B: 1.500;
+    /* Fibonacci Golden Ratio */
+    --sc-C: 1.618;
+    /* Major Third */
+    --sc-D: 1.250;
+}
+
+:root {
+    /* set a base unit */
+    --sp-base: 8px;
+    /* Standard spacing tokens are linearly incremental */
+    --sp-1: var(--sp-base);
+    --sp-2: calc(var(--sp-1) + var(--sp-base));
+    --sp-3: calc(var(--sp-2) + var(--sp-base));
+    --sp-4: calc(var(--sp-3) + var(--sp-base));
+    --sp-5: calc(var(--sp-4) + var(--sp-base));
+    --sp-6: calc(var(--sp-5) + var(--sp-base));
+    --sp-7: calc(var(--sp-6) + var(--sp-base));
+    --sp-8: calc(var(--sp-7) + var(--sp-base));
+    /* Scalar spacing tokens are according to scale system variables */
+    /* Scalar A */
+    --spsc-1: var(--sp-base);
+    --spsc-2: calc(var(--spsc-1) * var(--sc-A));
+    --spsc-3: calc(var(--spsc-2) * var(--sc-A));
+    --spsc-4: calc(var(--spsc-3) * var(--sc-A));
+    --spsc-5: calc(var(--spsc-4) * var(--sc-A));
+    --spsc-6: calc(var(--spsc-5) * var(--sc-A));
+    --spsc-7: calc(var(--spsc-6) * var(--sc-A));
+    --spsc-8: calc(var(--spsc-7) * var(--sc-A));
+    --spsc-9: calc(var(--spsc-8) * var(--sc-A));
+    --spsc-10: calc(var(--spsc-9) * var(--sc-A));
+    --spsc-11: calc(var(--spsc-10) * var(--sc-A));
+    --spsc-12: calc(var(--spsc-11) * var(--sc-A));
+}
+
+@media screen and (max-width: 560px) {
+     :root {
+        --spsc-1: var(--sp-base);
+        --spsc-2: calc(var(--spsc-1) * var(--sc-D));
+        --spsc-3: calc(var(--spsc-2) * var(--sc-D));
+        --spsc-4: calc(var(--spsc-3) * var(--sc-D));
+        --spsc-5: calc(var(--spsc-4) * var(--sc-D));
+        --spsc-6: calc(var(--spsc-5) * var(--sc-D));
+        --spsc-7: calc(var(--spsc-6) * var(--sc-D));
+        --spsc-8: calc(var(--spsc-7) * var(--sc-D));
+        --spsc-9: calc(var(--spsc-8) * var(--sc-D));
+        --spsc-10: calc(var(--spsc-9) * var(--sc-D));
+        --spsc-11: calc(var(--spsc-10) * var(--sc-D));
+        --spsc-12: calc(var(--spsc-11) * var(--sc-D));
+    }
+}
+
+@media screen and (min-width: 720px) {
+     :root {
+        --spsc-1: var(--sp-base);
+        --spsc-2: calc(var(--spsc-1) * var(--sc-B));
+        --spsc-3: calc(var(--spsc-2) * var(--sc-B));
+        --spsc-4: calc(var(--spsc-3) * var(--sc-B));
+        --spsc-5: calc(var(--spsc-4) * var(--sc-B));
+        --spsc-6: calc(var(--spsc-5) * var(--sc-B));
+        --spsc-7: calc(var(--spsc-6) * var(--sc-B));
+        --spsc-8: calc(var(--spsc-7) * var(--sc-B));
+        --spsc-9: calc(var(--spsc-8) * var(--sc-B));
+        --spsc-10: calc(var(--spsc-9) * var(--sc-B));
+        --spsc-11: calc(var(--spsc-10) * var(--sc-B));
+        --spsc-12: calc(var(--spsc-11) * var(--sc-B));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+     :root {
+        --spsc-1: var(--sp-base);
+        --spsc-2: calc(var(--spsc-1) * var(--sc-B));
+        --spsc-3: calc(var(--spsc-2) * var(--sc-B));
+        --spsc-4: calc(var(--spsc-3) * var(--sc-B));
+        --spsc-5: calc(var(--spsc-4) * var(--sc-B));
+        --spsc-6: calc(var(--spsc-5) * var(--sc-B));
+        --spsc-7: calc(var(--spsc-6) * var(--sc-B));
+        --spsc-8: calc(var(--spsc-7) * var(--sc-B));
+        --spsc-9: calc(var(--spsc-8) * var(--sc-B));
+        --spsc-10: calc(var(--spsc-9) * var(--sc-B));
+        --spsc-11: calc(var(--spsc-10) * var(--sc-B));
+        --spsc-12: calc(var(--spsc-11) * var(--sc-B));
+    }
+}
+
+
+/* FONT SIZES */
+
+:root {
+    --fs-1: 1rem;
+    --fs-2: calc(var(--fs-1) * var(--sc-A));
+    --fs-3: calc(var(--fs-2) * var(--sc-A));
+    --fs-4: calc(var(--fs-3) * var(--sc-A));
+    --fs-5: calc(var(--fs-4) * var(--sc-A));
+    --fs-6: calc(var(--fs-5) * var(--sc-A));
+}
+
+@media screen and (max-width: 560px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-D));
+        --fs-3: calc(var(--fs-2) * var(--sc-D));
+        --fs-4: calc(var(--fs-3) * var(--sc-D));
+        --fs-5: calc(var(--fs-4) * var(--sc-D));
+        --fs-6: calc(var(--fs-5) * var(--sc-D));
+    }
+}
+
+@media screen and (min-width: 720px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-B));
+        --fs-3: calc(var(--fs-2) * var(--sc-B));
+        --fs-4: calc(var(--fs-3) * var(--sc-B));
+        --fs-5: calc(var(--fs-4) * var(--sc-B));
+        --fs-6: calc(var(--fs-5) * var(--sc-B));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-C));
+        --fs-3: calc(var(--fs-2) * var(--sc-C));
+        --fs-4: calc(var(--fs-3) * var(--sc-C));
+        --fs-5: calc(var(--fs-4) * var(--sc-C));
+        --fs-6: calc(var(--fs-5) * var(--sc-C));
+    }
+}
+
+h1 {
+    font-size: var(--fs-6);
+}
+
+h2 {
+    font-size: var(--fs-5);
+}
+
+h3 {
+    font-size: var(--fs-4);
+}
+
+h4 {
+    font-size: var(--fs-3);
+}
+
+h5 {
+    font-size: var(--fs-2);
+}
+
+h6 {
+    font-size: var(--fs-1);
+}
+
+p {
+    font-size: var(--fs-2);
+}
+
+
+/* COLOURS */
+
+:root {
+    --primary: #424242;
+    --p-light: #6d6d6d;
+    --p-dark: #1b1b1b;
+    --accent: #304ffe;
+    --text: #1b1b1b;
+    --background: #ffffff;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.clr-primary {
+    color: var(--primary);
+}
+
+.clr-p-light {
+    color: var(--p-dark);
+}
+
+.clr-p-dark {
+    color: var(--p-light);
+}
+
+.clr-accent {
+    color: var(--accent);
+}
+
+
+/* MOTION */
+
+* {
+    transition: var(--mn-3);
+}
+
+:root {
+    --mn-1: 120ms;
+    --mn-2: 240ms;
+    --mn-3: 480ms;
+    --mn-4: 1000ms;
+}
+
+
+/* LINES */
+
+:root {
+    --border: 1px solid var(--p-light);
+}
+
+.ln {
+    border: var(--border);
+}
+
+.nl-top {
+    border-top: none;
+}
+
+.nl-bottom {
+    border-bottom: none;
+}
+
+.nl-left {
+    border-left: none;
+}
+
+.nl-right {
+    border-right: none;
+}
+
+.ln-top {
+    border-top: var(--border);
+}
+
+.ln-bottom {
+    border-top: var(--border);
+}
+
+.ln-left {
+    border-top: var(--border);
+}
+
+.ln-right {
+    border-top: var(--border);
+}
+
+
+/* COLUMNS */
+
+.cols-1 {
+    grid-column: span 1;
+}
+
+.cols-2 {
+    grid-column: span 2;
+}
+
+.cols-3 {
+    grid-column: span 3;
+}
+
+.cols-4 {
+    grid-column: span 4;
+}
+
+.cols-5 {
+    grid-column: span 5;
+}
+
+.cols-6 {
+    grid-column: span 6;
+}
+
+.cols-7 {
+    grid-column: span 7;
+}
+
+.cols-8 {
+    grid-column: span 8;
+}
+
+.cols-9 {
+    grid-column: span 9;
+}
+
+.cols-10 {
+    grid-column: span 10;
+}
+
+.cols-11 {
+    grid-column: span 11;
+}
+
+.cols-12 {
+    grid-column: span 12;
+}

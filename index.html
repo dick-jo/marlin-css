@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="toolkit.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            font-family: 'Poppins', monospace;
+        }
+        
+        body {
+            padding: var(--spsc-6);
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: calc(100% - (var(--fs-6) * 2));
+            width: 100%;
+            padding: var(--spsc-3);
+            border-radius: var(--spsc-2);
+        }
+        
+        .grid-item {
+            /* height: var(--spsc-10); */
+            margin: var(--spsc-2);
+            background-color: var(--accent);
+            border-radius: var(--spsc-2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Griddy<span class="clr-accent">.</span></h1>
+    </header>
+    <section class="grid-container ln">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </section>
+
+
+
+</body>
+
+</html>
+
+<!-- comment goes here -->
