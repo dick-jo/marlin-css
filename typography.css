@@ -1,44 +1,44 @@
 /* FONT SIZES */
 
-:root {
-    --fs-1: 1rem;
-    --fs-2: calc(var(--fs-1) * var(--sc-C));
-    --fs-3: calc(var(--fs-2) * var(--sc-C));
-    --fs-4: calc(var(--fs-3) * var(--sc-C));
-    --fs-5: calc(var(--fs-4) * var(--sc-C));
-    --fs-6: calc(var(--fs-5) * var(--sc-C));
-}
-
 @media screen and (max-width: 360px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-D));
-        --fs-3: calc(var(--fs-2) * var(--sc-D));
-        --fs-4: calc(var(--fs-3) * var(--sc-D));
-        --fs-5: calc(var(--fs-4) * var(--sc-D));
-        --fs-6: calc(var(--fs-5) * var(--sc-D));
+        --fs-2: calc(var(--fs-1) * var(--sc-01));
+        --fs-3: calc(var(--fs-2) * var(--sc-01));
+        --fs-4: calc(var(--fs-3) * var(--sc-01));
+        --fs-5: calc(var(--fs-4) * var(--sc-01));
+        --fs-6: calc(var(--fs-5) * var(--sc-01));
     }
+}
+
+:root {
+    --fs-1: 1rem;
+    --fs-2: calc(var(--fs-1) * var(--sc-3));
+    --fs-3: calc(var(--fs-2) * var(--sc-3));
+    --fs-4: calc(var(--fs-3) * var(--sc-3));
+    --fs-5: calc(var(--fs-4) * var(--sc-3));
+    --fs-6: calc(var(--fs-5) * var(--sc-3));
 }
 
 @media screen and (min-width: 361px) and (max-width: 864px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-A));
-        --fs-3: calc(var(--fs-2) * var(--sc-A));
-        --fs-4: calc(var(--fs-3) * var(--sc-A));
-        --fs-5: calc(var(--fs-4) * var(--sc-A));
-        --fs-6: calc(var(--fs-5) * var(--sc-A));
+        --fs-2: calc(var(--fs-1) * var(--sc-1));
+        --fs-3: calc(var(--fs-2) * var(--sc-1));
+        --fs-4: calc(var(--fs-3) * var(--sc-1));
+        --fs-5: calc(var(--fs-4) * var(--sc-1));
+        --fs-6: calc(var(--fs-5) * var(--sc-1));
     }
 }
 
 @media screen and (min-width: 865px) and (max-width: 1366px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-B));
-        --fs-3: calc(var(--fs-2) * var(--sc-B));
-        --fs-4: calc(var(--fs-3) * var(--sc-B));
-        --fs-5: calc(var(--fs-4) * var(--sc-B));
-        --fs-6: calc(var(--fs-5) * var(--sc-B));
+        --fs-2: calc(var(--fs-1) * var(--sc-2));
+        --fs-3: calc(var(--fs-2) * var(--sc-2));
+        --fs-4: calc(var(--fs-3) * var(--sc-2));
+        --fs-5: calc(var(--fs-4) * var(--sc-2));
+        --fs-6: calc(var(--fs-5) * var(--sc-2));
     }
 }
 
