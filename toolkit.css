@@ -5,6 +5,8 @@
 @import url("colour.css");
 @import url("borders.css");
 @import url("space.css");
+@import url("motion.css");
+@import url("elevation.css");
 
 /* BOILERPLATE */
 
@@ -33,20 +35,6 @@ html {
     --bp-1: 864px;
     --bp-2: 1366px;
     --bp-3: 1920px;
-}
-
-
-/* MOTION */
-
-* {
-    transition: var(--mn-3);
-}
-
-:root {
-    --mn-1: 120ms;
-    --mn-2: 240ms;
-    --mn-3: 480ms;
-    --mn-4: 1000ms;
 }
 
 
