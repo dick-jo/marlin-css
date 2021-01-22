@@ -29,8 +29,7 @@
         }
         
         .tracking-in-expand {
-            animation: tracking-in-expand calc(var(--mn-4) * 9) var(--ez-cubic-o) var(--mn-2) both;
-            animation-iteration-count: infinite;
+            animation: tracking-in-expand calc(var(--mn-4) * 9) var(--ez-cubic-o) var(--mn-2) infinite both;
         }
         
         h2 {
@@ -62,8 +61,7 @@
         }
         
         .arrow {
-            animation: arrow calc(var(--mn-4) * 9) var(--ez-snap);
-            animation-iteration-count: infinite;
+            animation: arrow calc(var(--mn-4) * 9) var(--ez-snap) infinite both;
         }
         
         @keyframes arrow {
@@ -126,6 +124,36 @@
         #card-heart:focus {
             border: 1.6px solid var(--accent);
         }
+        /*  */
+        
+        #card-info {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            padding: var(--spsc-3);
+            border-radius: var(--spsc-3);
+            border: 1px solid #d3d3d3;
+        }
+        
+        #more-info {
+            display: none;
+        }
+        
+        #card-info:hover {
+            align-items: flex-start;
+        }
+        
+        #card-info:hover #read-more {
+            display: none;
+        }
+        
+        #card-info:hover #more-info {
+            display: initial;
+        }
+        
+        #card-info:hover h3 {
+            color: var(--accent);
+        }
     </style>
 
 </head>
@@ -146,6 +174,14 @@
         <div id="card-heart" class="cols-3">
             <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
+        <div id="card-info" class="cols-3">
+            <h3>Marlin.</h3>
+            <div>
+                <h6 id="read-more">Read more ></h6>
+                <p id="more-info">A big bad fish with a pointy face. What a cheeky little fellow!</p>
+            </div>
+        </div>
+
     </main>
 
 </body>
