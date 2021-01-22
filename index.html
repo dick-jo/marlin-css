@@ -24,73 +24,129 @@
             padding: var(--spsc-6);
         }
         
-        .swatch {
-            display: flex;
-            flex-flow: wrap;
-            max-height: var(--spdb-6);
+        main {
+            height: calc(100% - (var(--spsc-8) + var(--fs-6)));
         }
         
-        .colour {
-            border-radius: var(--spsc-2) var(--spsc-2) 0 0;
-            height: var(--spdb-5);
-            flex: 1 1 100%;
+        .tracking-in-expand {
+            animation: tracking-in-expand calc(var(--mn-4) * 9) var(--ez-cubic-o) var(--mn-2) both;
+            animation-iteration-count: infinite;
+        }
+        
+        h2 {
+            justify-self: end;
+            align-self: center;
+        }
+        
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+            1% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+            12% {
+                letter-spacing: normal;
+                opacity: 1;
+            }
+            88% {
+                letter-spacing: normal;
+                opacity: 1;
+            }
+            100% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+        }
+        
+        .arrow {
+            animation: arrow calc(var(--mn-4) * 9) var(--ez-snap);
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes arrow {
+            0% {
+                transform: translateX(0px);
+            }
+            2% {
+                transform: translateX(-6px);
+            }
+            5% {
+                transform: translateX(12px);
+            }
+            24% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+        #card-heart {
+            border-radius: var(--spsc-3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid #d3d3d3;
+        }
+        
+        #icon-heart {
+            width: var(--spsc-6);
+            height: var(--spsc-6);
+            fill: #f48fb1;
+            transition: var(--mn-1) !important;
+        }
+        
+        #card-heart:hover {
+            background-color: #fce4ec;
+            box-shadow: var(--ev-22);
+            transform: scale(1.1);
+            border: none;
+        }
+        
+        #card-heart:hover #icon-heart {
+            transform: scale(1.2);
+        }
+        
+        #card-heart:active {
+            background-color: #f48fb1;
+            box-shadow: var(--ev-24);
+            transform: scale(1.2)
+        }
+        
+        #card-heart:active #icon-heart {
+            fill: white;
+            transform: scale(2);
+            transition: 1000ms;
+        }
+        
+        #card-heart:focus {
+            border: 1.6px solid var(--accent);
         }
     </style>
 
 </head>
 
 <body>
-    <header class=:>
-        <h1>Marlin<span class="clr-accent">.</span></h1>
+
+    <header class="grid gr-cols-12 cols-12">
+        <h2 class="arrow clr-accent">➡</h2>
+        <h1 class="tracking-in-expand">Motion<span class="clr-accent">.</span></h1>
     </header>
-    <section class="grid-container gr-auto-fit gr-gap-spsc-4 br-spsc-2">
-        <div class="swatch cols-3 ln br-spsc-2 nl-top">
-            <div class="colour fill-accent"></div>
-            <div class="label pgsc-3">
-                <p>Accent</p>
-                <h6>#3db8ea</h6>
-            </div>
+    <main class="grid gr-cols-12 gr-rows-2 gr-gap-spsc-4">
+        <div id="card-heart" class="cols-3">
+            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
-        <div class="swatch cols-2 ln br-spsc-2 nl-top">
-            <div class="colour fill-primary"></div>
-            <div class="label pgsc-3">
-                <p>Primary</p>
-                <h6>#424242</h6>
-            </div>
+        <div id="card-heart" class="cols-3">
+            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
-        <div class="swatch ln br-spsc-2 nl-top">
-            <div class="colour fill-p-light"></div>
-            <div class="label pgsc-3">
-                <p>P-Light</p>
-                <h6>#6D6D6D</h6>
-            </div>
+        <div id="card-heart" class="cols-3">
+            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
-        <div class="swatch ln br-spsc-2 nl-top">
-            <div class="colour fill-p-dark"></div>
-            <div class="label pgsc-3">
-                <p>P-Dark</p>
-                <h6>#3db8ea</h6>
-            </div>
-        </div>
-        <div class="swatch cols-2 ln br-spsc-2">
-            <div class="colour fill-background ln-bottom"></div>
-            <div class="label pgsc-3">
-                <p>Background</p>
-                <h6>#1B1B1B</h6>
-            </div>
-        </div>
-        <div class="swatch cols-3 ln br-spsc-2 nl-top">
-            <div class="colour fill-text"></div>
-            <div class="label pgsc-3">
-                <p>Text</p>
-                <h6>#1B1B1B</h6>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
-
+    </main>
 
 </body>
 
