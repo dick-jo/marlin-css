@@ -7,6 +7,9 @@
     --accent: #304ffe;
     --text: #1b1b1b;
     --background: #ffffff;
+    /* Dark Mode */
+    --dark-primary: #424242;
+    --dark-background: #1b1b1b;
 }
 
 body {

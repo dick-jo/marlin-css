@@ -67,5 +67,5 @@ h6 {
 }
 
 p {
-    font-size: var(--fs-2);
+    font-size: calc(var(--fs-2) * 0.8);
 }
