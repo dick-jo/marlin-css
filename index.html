@@ -8,9 +8,6 @@
 
     <!-- Core toolkit -->
     <link rel="stylesheet" type="text/css" href="toolkit.css">
-    <!-- Columns system -->
-    <link rel="stylesheet" type="text/css" href="columns.css">
-
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -23,19 +20,23 @@
         }
         
         .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            height: calc(100% - (var(--fs-6) * 2));
-            width: 100%;
-            padding: var(--spsc-3);
-            border-radius: var(--spsc-2);
+            /* height: calc(100% - (var(--fs-6) + var(--spsc-6))); */
         }
         
-        .grid-item {
-            /* height: var(--spsc-10); */
-            margin: var(--spsc-2);
-            background-color: var(--accent);
-            border-radius: var(--spsc-2);
+        .swatch {
+            display: flex;
+            flex-flow: wrap;
+            max-height: var(--spdb-6);
+        }
+        
+        .colour {
+            border-radius: var(--spsc-2) var(--spsc-2) 0 0;
+            height: var(--spdb-5);
+            flex: 1 1 100%;
+        }
+        
+        .label {
+            /* height: var(--spsc-6); */
         }
     </style>
 
@@ -45,12 +46,51 @@
     <header>
         <h1>Griddy<span class="clr-accent">.</span></h1>
     </header>
-    <section class="grid-container ln">
-        <div class="grid-item cols-2"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+    <section class="grid-container gr-auto-fit gr-gap-spsc-4 br-spsc-2">
+        <div class="swatch cols-3 ln br-spsc-2 nl-top">
+            <div class="colour fill-accent"></div>
+            <div class="label pgsc-3">
+                <p>Accent</p>
+                <h6>#3db8ea</h6>
+            </div>
+        </div>
+        <div class="swatch cols-2 ln br-spsc-2 nl-top">
+            <div class="colour fill-primary"></div>
+            <div class="label pgsc-3">
+                <p>Primary</p>
+                <h6>#424242</h6>
+            </div>
+        </div>
+        <div class="swatch ln br-spsc-2 nl-top">
+            <div class="colour fill-p-light"></div>
+            <div class="label pgsc-3">
+                <p>P-Light</p>
+                <h6>#6D6D6D</h6>
+            </div>
+        </div>
+        <div class="swatch ln br-spsc-2 nl-top">
+            <div class="colour fill-p-dark"></div>
+            <div class="label pgsc-3">
+                <p>P-Dark</p>
+                <h6>#3db8ea</h6>
+            </div>
+        </div>
+        <div class="swatch cols-2 ln br-spsc-2">
+            <div class="colour fill-background ln-bottom"></div>
+            <div class="label pgsc-3">
+                <p>Background</p>
+                <h6>#1B1B1B</h6>
+            </div>
+        </div>
+        <div class="swatch cols-3 ln br-spsc-2 nl-top">
+            <div class="colour fill-text"></div>
+            <div class="label pgsc-3">
+                <p>Text</p>
+                <h6>#1B1B1B</h6>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
 
 
