@@ -172,7 +172,6 @@
             font-size: 2rem;
         }
         
-        .shrink,
         .grow,
         .shadow {
             display: flex;
@@ -180,13 +179,6 @@
             align-items: center;
             border: 1px solid #d3d3d3;
             border-radius: var(--spsc-3);
-        }
-        
-        .shrink:hover {
-            transform: scale(.56);
-            background-color: var(--p-dark);
-            color: white;
-            border: none;
         }
         
         .grow:hover {
@@ -204,6 +196,28 @@
             box-shadow: var(--ev-22);
             transform: scale(1.1);
             border: none;
+        }
+        
+        .shrink-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .shrink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            height: 100%;
+            border: 1px solid #d3d3d3;
+            border-radius: var(--spsc-3);
+        }
+        
+        .shrink-wrap:hover .shrink {
+            transform: scale(0.56);
+            background-color: var(--p-dark);
+            color: white;
         }
     </style>
 
@@ -229,8 +243,8 @@
         </div>
 
         <!--  -->
-        <div class="shrink cols-4">
-            <h4>Shrink!</h4>
+        <div class="shrink-wrap cols-4">
+            <span class="shrink"><h4>Shrink!</h4></span>
         </div>
         <div class="grow cols-4">
             <h4>Grow!</h4>
