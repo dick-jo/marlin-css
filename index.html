@@ -29,7 +29,7 @@
         }
         
         .tracking-in-expand {
-            animation: tracking-in-expand calc(var(--mn-4) * 9) var(--ez-cubic-o) var(--mn-2) infinite both;
+            animation: tracking-in-expand calc(var(--mn-4) * 9) ease-in-out infinite both;
         }
         
         h2 {
@@ -96,6 +96,26 @@
             height: var(--spsc-6);
             fill: #f48fb1;
             transition: var(--mn-1) !important;
+            /*  */
+            animation: heart-beat 3000ms ease-in-out infinite;
+        }
+        
+        @keyframes heart-beat {
+            0% {
+                transform: scale(1)
+            }
+            33% {
+                transform: scale(1.4) rotate(-8deg)
+            }
+            50% {
+                transform: scale(1)
+            }
+            66% {
+                transform: scale(1.4) rotate(8deg)
+            }
+            100% {
+                transform: scale(1)
+            }
         }
         
         #card-heart:hover {
@@ -128,31 +148,62 @@
         
         #card-info {
             display: flex;
-            flex-flow: row wrap;
-            align-items: flex-end;
+            flex-flow: column wrap;
+            justify-content: space-between;
             padding: var(--spsc-3);
             border-radius: var(--spsc-3);
             border: 1px solid #d3d3d3;
         }
         
         #more-info {
-            display: none;
-        }
-        
-        #card-info:hover {
-            align-items: flex-start;
+            opacity: 0;
         }
         
         #card-info:hover #read-more {
-            display: none;
+            opacity: .12;
         }
         
         #card-info:hover #more-info {
-            display: initial;
+            opacity: 1;
         }
         
         #card-info:hover h3 {
             color: var(--accent);
+            font-size: 2rem;
+        }
+        
+        .shrink,
+        .grow,
+        .shadow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #d3d3d3;
+            border-radius: var(--spsc-3);
+        }
+        
+        .shrink:hover {
+            transform: scale(.56);
+            background-color: var(--p-dark);
+            color: white;
+            border: none;
+        }
+        
+        .grow:hover {
+            transform: scale(1.4);
+            background-color: var(--accent);
+            color: white;
+            border: none;
+        }
+        
+        .shadow {
+            border: none;
+        }
+        
+        .shadow:hover {
+            box-shadow: var(--ev-22);
+            transform: scale(1.1);
+            border: none;
         }
     </style>
 
@@ -171,16 +222,23 @@
         <div id="card-heart" class="cols-3">
             <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
-        <div id="card-heart" class="cols-3">
-            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <div id="card-info" class="cols-6">
+            <h3 id="marlin">Marlin.</h3>
+            <p id="more-info">A big bad fish with a pointy face. What a cheeky little fellow!</p>
+            <h6 id="read-more">Read more ></h6>
         </div>
-        <div id="card-info" class="cols-3">
-            <h3>Marlin.</h3>
-            <div>
-                <h6 id="read-more">Read more ></h6>
-                <p id="more-info">A big bad fish with a pointy face. What a cheeky little fellow!</p>
-            </div>
+
+        <!--  -->
+        <div class="shrink cols-4">
+            <h4>Shrink!</h4>
         </div>
+        <div class="grow cols-4">
+            <h4>Grow!</h4>
+        </div>
+        <div class="shadow cols-4 fill-background">
+            <h4>Shadow</h4>
+        </div>
+        <!--  -->
 
     </main>
 
