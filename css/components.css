@@ -1,0 +1,87 @@
+/* BUTTONS */
+
+button,
+.btn-primary {
+    padding: var(--spsc-2) var(--spsc-4);
+    background-color: var(--accent);
+    color: var(--background);
+    border: none;
+    outline: none;
+}
+
+[data-theme="light"] button {
+    color: var(--background);
+}
+
+[data-theme="dark"] button {
+    color: var(--text);
+}
+
+button:hover,
+.btn-primary:hover {
+    background-color: var(--a-dark);
+}
+
+button:active,
+.btn-primary:active {
+    background-color: var(--a-light)
+}
+
+.btn-secondary {
+    background-color: var(--primary)
+}
+
+.btn-secondary:hover {
+    background-color: var(--p-dark)
+}
+
+.btn-secondary:active {
+    background-color: var(--p-light)
+}
+
+
+/* FORMS */
+
+input[type="text"] {
+    height: var(--spsc-5);
+    border: var(--border);
+    outline: none;
+}
+
+
+/* Enhance form clickability on smaller viewports */
+
+@media screen and (max-width: 360px) {
+    input[type="text"] {
+        height: var(--spsc-9);
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+    input[type="text"] {
+        height: var(--spsc-7);
+    }
+}
+
+
+/* TILE */
+
+.tile {
+    box-shadow: var(--ev-1);
+}
+
+.tile-idle-ev-0 {
+    box-shadow: var(--ev-0);
+}
+
+.tile:hover,
+.tile-idle-ev-0:hover {
+    box-shadow: var(--ev-12);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.tile:active,
+.tile-idle-ev-0:hover {
+    box-shadow: var(--ev-8);
+    border-color: rgba(0, 0, 0, 0);
+}

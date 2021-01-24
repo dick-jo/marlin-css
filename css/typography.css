@@ -1,0 +1,161 @@
+/* INITIALISE */
+
+* {
+    /* Consolidate all line-heights */
+    line-height: 1;
+    /* Set default font family to monospace because you never want to see Times New Roman again */
+    /* font-family: monospace; */
+}
+
+
+/* FONT SIZES */
+
+
+/* FONT SIZES | Default */
+
+:root {
+    --fs-1: 1rem;
+    --fs-2: calc(var(--fs-1) * var(--sc-1));
+    --fs-3: calc(var(--fs-2) * var(--sc-1));
+    --fs-4: calc(var(--fs-3) * var(--sc-1));
+    --fs-5: calc(var(--fs-4) * var(--sc-1));
+    --fs-6: calc(var(--fs-5) * var(--sc-1));
+}
+
+
+/* FONT SIZES | Responsive */
+
+@media screen and (max-width: 360px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-01));
+        --fs-3: calc(var(--fs-2) * var(--sc-01));
+        --fs-4: calc(var(--fs-3) * var(--sc-01));
+        --fs-5: calc(var(--fs-4) * var(--sc-01));
+        --fs-6: calc(var(--fs-5) * var(--sc-01));
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-1));
+        --fs-3: calc(var(--fs-2) * var(--sc-1));
+        --fs-4: calc(var(--fs-3) * var(--sc-1));
+        --fs-5: calc(var(--fs-4) * var(--sc-1));
+        --fs-6: calc(var(--fs-5) * var(--sc-1));
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-1));
+        --fs-3: calc(var(--fs-2) * var(--sc-1));
+        --fs-4: calc(var(--fs-3) * var(--sc-1));
+        --fs-5: calc(var(--fs-4) * var(--sc-1));
+        --fs-6: calc(var(--fs-5) * var(--sc-1));
+    }
+}
+
+@media screen and (min-width: 865px) and (max-width: 1366px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-2));
+        --fs-3: calc(var(--fs-2) * var(--sc-2));
+        --fs-4: calc(var(--fs-3) * var(--sc-2));
+        --fs-5: calc(var(--fs-4) * var(--sc-2));
+        --fs-6: calc(var(--fs-5) * var(--sc-2));
+    }
+}
+
+@media screen and (min-width: 1361px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--sc-3));
+        --fs-3: calc(var(--fs-2) * var(--sc-3));
+        --fs-4: calc(var(--fs-3) * var(--sc-3));
+        --fs-5: calc(var(--fs-4) * var(--sc-3));
+        --fs-6: calc(var(--fs-5) * var(--sc-3));
+    }
+}
+
+
+/* Set body 1 styling relative to fs-2 (always greater than 1rem)
+...body 1 acts as default font for paragraph text and button labels*/
+
+p,
+.body-1,
+button,
+label {
+    font-size: calc(var(--fs-2) * 0.8);
+}
+
+h1 {
+    font-size: var(--fs-6);
+}
+
+h2 {
+    font-size: var(--fs-5);
+}
+
+h3 {
+    font-size: var(--fs-4);
+}
+
+h4 {
+    font-size: var(--fs-3);
+}
+
+h5 {
+    font-size: var(--fs-2);
+}
+
+h6 {
+    font-size: var(--fs-1);
+}
+
+
+/* LINE HEIGHTS */
+
+p {
+    line-height: calc(var(--fs-3) * .88);
+}
+
+h1 {
+    line-height: var(--fs-6);
+}
+
+h2 {
+    line-height: var(--fs-5);
+}
+
+h3 {
+    line-height: var(--fs-4);
+}
+
+h4 {
+    line-height: var(--fs-4);
+}
+
+h5 {
+    line-height: var(--fs-3);
+}
+
+h6 {
+    line-height: var(--fs-2);
+}
+
+caption,
+figcaption,
+label,
+legend {
+    line-height: var(--fs-2);
+}
+
+
+/* FONT WEIGHTS */
+
+label {
+    font-weight: 600;
+}

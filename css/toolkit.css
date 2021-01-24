@@ -1,0 +1,77 @@
+/* IMPORT ALL TOOLS */
+
+@import url("columns.css");
+@import url("typography.css");
+@import url("colour.css");
+@import url("line.css");
+@import url("space.css");
+@import url("motion.css");
+@import url("elevation.css");
+@import url("shortcuts.css");
+@import url("components.css");
+
+/* INITIALISE */
+
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Make common inline elements block for more predictable designing */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Maintain aspect ratios when applying max-width */
+
+img,
+svg,
+video,
+canvas {
+    height: auto;
+}
+
+
+/* Clear nav list styling to neatly handly nav links via lists */
+
+nav ul {
+    list-style: none;
+}
+
+
+/* Turn wrap on by default because why not */
+
+pre {
+    white-space: pre-wrap;
+}
+
+
+/* BREAKPOINTS */
+
+:root {
+    /* Currently useless inside @media queries until env() variables are available in CSS */
+    --bp-01: 360px;
+    --bp-1: 864px;
+    --bp-2: 1366px;
+    --bp-3: 1920px;
+}

@@ -1,0 +1,75 @@
+/* ELEVATION */
+
+
+/* CAST SHADOWS */
+
+:root {
+    --ev-1: 0px calc(var(--sp-1) * 0.32) calc(var(--sp-1) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-1) * 0.12) calc(var(--sp-1) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-1) * 0.12) calc(var(--sp-1) * 0.32) -2px rgba(0, 0, 0, 0.06);
+    --ev-2: 0px calc(var(--sp-2) * 0.32) calc(var(--sp-2) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-2) * 0.12) calc(var(--sp-2) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-2) * 0.12) calc(var(--sp-2) * 0.32) -2px rgba(0, 0, 0, 0.06);
+    --ev-3: 0px calc(var(--sp-3) * 0.32) calc(var(--sp-3) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-3) * 0.12) calc(var(--sp-3) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-3) * 0.12) calc(var(--sp-3) * 0.32) 0px rgba(0, 0, 0, 0.06);
+    --ev-4: 0px calc(var(--sp-4) * 0.32) calc(var(--sp-4) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-4) * 0.12) calc(var(--sp-4) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-4) * 0.12) calc(var(--sp-4) * 0.32) 0px rgba(0, 0, 0, 0.06);
+    --ev-5: 0px calc(var(--sp-5) * 0.32) calc(var(--sp-5) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-6) * 0.12) calc(var(--sp-5) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-5) * 0.12) calc(var(--sp-6) * 0.32) 2px rgba(0, 0, 0, 0.06);
+    --ev-6: 0px calc(var(--sp-6) * 0.32) calc(var(--sp-6) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-6) * 0.12) calc(var(--sp-6) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-6) * 0.12) calc(var(--sp-6) * 0.32) 2px rgba(0, 0, 0, 0.06);
+    --ev-7: 0px calc(var(--sp-7) * 0.32) calc(var(--sp-7) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-7) * 0.12) calc(var(--sp-7) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-7) * 0.12) calc(var(--sp-7) * 0.32) 4px rgba(0, 0, 0, 0.06);
+    --ev-8: 0px calc(var(--sp-8) * 0.32) calc(var(--sp-8) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-8) * 0.12) calc(var(--sp-8) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-8) * 0.12) calc(var(--sp-8) * 0.32) 4px rgba(0, 0, 0, 0.06);
+    --ev-9: 0px calc(var(--sp-9) * 0.32) calc(var(--sp-9) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-9) * 0.12) calc(var(--sp-9) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-9) * 0.12) calc(var(--sp-9) * 0.32) 6px rgba(0, 0, 0, 0.06);
+    --ev-10: 0px calc(var(--sp-10) * 0.32) calc(var(--sp-10) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-10) * 0.12) calc(var(--sp-10) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-10) * 0.12) calc(var(--sp-10) * 0.32) 6px rgba(0, 0, 0, 0.06);
+    --ev-11: 0px calc(var(--sp-11) * 0.32) calc(var(--sp-11) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-11) * 0.12) calc(var(--sp-11) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-11) * 0.12) calc(var(--sp-11) * 0.32) 8px rgba(0, 0, 0, 0.06);
+    --ev-12: 0px calc(var(--sp-12) * 0.32) calc(var(--sp-12) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-12) * 0.12) calc(var(--sp-12) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-12) * 0.12) calc(var(--sp-12) * 0.32) 8px rgba(0, 0, 0, 0.06);
+}
+
+.ev {
+    box-shadow: var(--ev)
+}
+
+.ev-1 {
+    box-shadow: var(--ev-1);
+}
+
+.ev-2 {
+    box-shadow: var(--ev-2);
+}
+
+.ev-3 {
+    box-shadow: var(--ev-3);
+}
+
+.ev-4 {
+    box-shadow: var(--ev-4);
+}
+
+.ev-5 {
+    box-shadow: var(--ev-5);
+}
+
+.ev-6 {
+    box-shadow: var(--ev-6);
+}
+
+.ev-7 {
+    box-shadow: var(--ev-7);
+}
+
+.ev-8 {
+    box-shadow: var(--ev-8);
+}
+
+.ev-9 {
+    box-shadow: var(--ev-9);
+}
+
+.ev-10 {
+    box-shadow: var(--ev-10);
+}
+
+.ev-11 {
+    box-shadow: var(--ev-11);
+}
+
+.ev-12 {
+    box-shadow: var(--ev-12);
+}
+
+.ev-0 {
+    box-shadow: none;
+}
