@@ -8,22 +8,256 @@
 
     <!-- Core toolkit -->
     <link rel="stylesheet" type="text/css" href="toolkit.css">
+    <!-- All systems -->
+    <link rel="stylesheet" type="text/css" href="columns.css">
+    <link rel="stylesheet" type="text/css" href="colour.css">
+    <link rel="stylesheet" type="text/css" href="borders.css">
+    <link rel="stylesheet" type="text/css" href="typography.css">
 
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            font-family: 'Poppins', monospace;
+        }
+        
+        body {
+            padding: var(--spsc-6);
+        }
+        
+        main {
+            height: calc(100% - (var(--spsc-8) + var(--fs-6)));
+        }
+        
+        .tracking-in-expand {
+            animation: tracking-in-expand calc(var(--mn-4) * 9) ease-in-out infinite both;
+        }
+        
+        h2 {
+            justify-self: end;
+            align-self: center;
+        }
+        
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+            1% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+            12% {
+                letter-spacing: normal;
+                opacity: 1;
+            }
+            88% {
+                letter-spacing: normal;
+                opacity: 1;
+            }
+            100% {
+                letter-spacing: -2rem;
+                opacity: 0;
+            }
+        }
+        
+        .arrow {
+            animation: arrow calc(var(--mn-4) * 9) var(--ez-snap) infinite both;
+        }
+        
+        @keyframes arrow {
+            0% {
+                transform: translateX(0px);
+            }
+            2% {
+                transform: translateX(-6px);
+            }
+            5% {
+                transform: translateX(12px);
+            }
+            24% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+        #card-heart {
+            border-radius: var(--spsc-3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid #d3d3d3;
+        }
+        
+        #icon-heart {
+            width: var(--spsc-6);
+            height: var(--spsc-6);
+            fill: #f48fb1;
+            transition: var(--mn-1) !important;
+            /*  */
+            animation: heart-beat 3000ms ease-in-out infinite;
+        }
+        
+        @keyframes heart-beat {
+            0% {
+                transform: scale(1)
+            }
+            33% {
+                transform: scale(1.4) rotate(-8deg)
+            }
+            50% {
+                transform: scale(1)
+            }
+            66% {
+                transform: scale(1.4) rotate(8deg)
+            }
+            100% {
+                transform: scale(1)
+            }
+        }
+        
+        #card-heart:hover {
+            background-color: #fce4ec;
+            box-shadow: var(--ev-22);
+            transform: scale(1.1);
+            border: none;
+        }
+        
+        #card-heart:hover #icon-heart {
+            transform: scale(1.2);
+        }
+        
+        #card-heart:active {
+            background-color: #f48fb1;
+            box-shadow: var(--ev-24);
+            transform: scale(1.2)
+        }
+        
+        #card-heart:active #icon-heart {
+            fill: white;
+            transform: scale(2);
+            transition: 1000ms;
+        }
+        
+        #card-heart:focus {
+            border: 1.6px solid var(--accent);
+        }
+        /*  */
+        
+        #card-info {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            padding: var(--spsc-3);
+            border-radius: var(--spsc-3);
+            border: 1px solid #d3d3d3;
+        }
+        
+        #more-info {
+            opacity: 0;
+        }
+        
+        #card-info:hover #read-more {
+            opacity: .12;
+        }
+        
+        #card-info:hover #more-info {
+            opacity: 1;
+        }
+        
+        #card-info:hover h3 {
+            color: var(--accent);
+            font-size: 2rem;
+        }
+        
+        .grow,
+        .shadow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #d3d3d3;
+            border-radius: var(--spsc-3);
+        }
+        
+        .grow:hover {
+            transform: scale(1.4);
+            background-color: var(--accent);
+            color: white;
+            border: none;
+        }
+        
+        .shadow {
+            border: none;
+        }
+        
+        .shadow:hover {
+            box-shadow: var(--ev-22);
+            transform: scale(1.1);
+            border: none;
+        }
+        
+        .shrink-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .shrink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            height: 100%;
+            border: 1px solid #d3d3d3;
+            border-radius: var(--spsc-3);
+        }
+        
+        .shrink-wrap:hover .shrink {
+            transform: scale(0.56);
+            background-color: var(--p-dark);
+            color: white;
+        }
     </style>
 
 </head>
 
 <body>
 
+    <header class="grid gr-cols-12 cols-12">
+        <h2 class="arrow clr-accent">➡</h2>
+        <h1 class="tracking-in-expand">Motion<span class="clr-accent">.</span></h1>
+    </header>
+    <main class="grid gr-cols-12 gr-rows-2 gr-gap-spsc-4">
+        <div id="card-heart" class="cols-3">
+            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <div id="card-heart" class="cols-3">
+            <svg id="icon-heart" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <div id="card-info" class="cols-6">
+            <h3 id="marlin">Marlin.</h3>
+            <p id="more-info">A big bad fish with a pointy face. What a cheeky little fellow!</p>
+            <h6 id="read-more">Read more ></h6>
+        </div>
 
+        <!--  -->
+        <div class="shrink-wrap cols-4">
+            <span class="shrink"><h4>Shrink!</h4></span>
+        </div>
+        <div class="grow cols-4">
+            <h4>Grow!</h4>
+        </div>
+        <div class="shadow cols-4 fill-background">
+            <h4>Shadow</h4>
+        </div>
+        <!--  -->
+
+    </main>
 
 </body>
 
 </html>
 
 <!-- comment goes here -->
-
-https://youtu.be/VLVdjLbXdm4 https://youtu.be/W_juM14WHNQ https://youtu.be/KDgZ4oG6Bz0 https://youtu.be/KUEjXZPL4ns https://youtu.be/wbr5vkIo4K8 https://youtu.be/XZxES1BCENk https://youtu.be/2wyB8cLOGXY https://youtu.be/vr1D3oswBgE https://youtu.be/0q-7pTdOQ94
-https://youtu.be/Ks72NYHiMiY
