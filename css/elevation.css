@@ -73,3 +73,78 @@
 .ev-0 {
     box-shadow: none;
 }
+
+:root {
+    --ov-1: rgba(255, 255, 255, 0.01);
+    --ov-2: rgba(255, 255, 255, 0.015);
+    --ov-3: rgba(255, 255, 255, 0.02);
+    --ov-4: rgba(255, 255, 255, 0.025);
+    --ov-5: rgba(255, 255, 255, 0.03);
+    --ov-6: rgba(255, 255, 255, 0.035);
+    --ov-7: rgba(255, 255, 255, 0.04);
+    --ov-8: rgba(255, 255, 255, 0.045);
+    --ov-9: rgba(255, 255, 255, 0.05);
+    --ov-10: rgba(255, 255, 255, 0.06);
+    --ov-11: rgba(255, 255, 255, 0.07);
+    --ov-12: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .ev-1 {
+    box-shadow: var(--ev-1);
+    background-color: var(--ov-1);
+}
+
+[data-theme="dark"] .ev-2 {
+    box-shadow: var(--ev-2);
+    background-color: var(--ov-2);
+}
+
+[data-theme="dark"] .ev-3 {
+    box-shadow: var(--ev-3);
+    background-color: var(--ov-3);
+}
+
+[data-theme="dark"] .ev-4 {
+    box-shadow: var(--ev-4);
+    background-color: var(--ov-4);
+}
+
+[data-theme="dark"] .ev-5 {
+    box-shadow: var(--ev-5);
+    background-color: var(--ov-5);
+}
+
+[data-theme="dark"] .ev-6 {
+    box-shadow: var(--ev-6);
+    background-color: var(--ov-6);
+}
+
+[data-theme="dark"] .ev-7 {
+    box-shadow: var(--ev-7);
+    background-color: var(--ov-7);
+}
+
+[data-theme="dark"] .ev-8 {
+    box-shadow: var(--ev-8);
+    background-color: var(--ov-8);
+}
+
+[data-theme="dark"] .ev-9 {
+    box-shadow: var(--ev-9);
+    background-color: var(--ov-9);
+}
+
+[data-theme="dark"] .ev-10 {
+    box-shadow: var(--ev-10);
+    background-color: var(--ov-10);
+}
+
+[data-theme="dark"] .ev-11 {
+    box-shadow: var(--ev-11);
+    background-color: var(--ov-11);
+}
+
+[data-theme="dark"] .ev-12 {
+    box-shadow: var(--ev-12);
+    background-color: var(--ov-12);
+}
