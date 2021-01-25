@@ -74,6 +74,10 @@
     box-shadow: none;
 }
 
+.ev-ln-1 {
+    border: var(--border);
+}
+
 :root {
     --ov-1: rgba(255, 255, 255, 0.01);
     --ov-2: rgba(255, 255, 255, 0.015);
@@ -147,4 +151,9 @@
 [data-theme="dark"] .ev-12 {
     box-shadow: var(--ev-12);
     background-color: var(--ov-12);
+}
+
+[data-theme="dark"] .ev-ln-1 {
+    border: var(--border);
+    background-color: var(--ov-1);
 }

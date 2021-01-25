@@ -1,14 +1,14 @@
 /* IMPORT ALL TOOLS */
 
-@import url("columns.css");
-@import url("typography.css");
-@import url("colour.css");
-@import url("line.css");
-@import url("space.css");
-@import url("motion.css");
-@import url("elevation.css");
-@import url("shortcuts.css");
-@import url("components.css");
+@import url("./columns.css");
+@import url("./typography.css");
+@import url("./colour.css");
+@import url("./line.css");
+@import url("./space.css");
+@import url("./motion.css");
+@import url("./elevation.css");
+@import url("./shortcuts.css");
+@import url("./components.css");
 
 /* INITIALISE */
 

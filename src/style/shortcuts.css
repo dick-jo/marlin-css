@@ -132,3 +132,7 @@
  :root {
     --invisible: rgba(0, 0, 0, 0);
 }
+
+.nosel {
+    user-select: none;
+}

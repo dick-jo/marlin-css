@@ -1,0 +1,24 @@
+{
+  "name": "marlin-css",
+  "version": "0.2.0",
+  "description": "An extremely opinionted css framework powered by streamlined design systems",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-jo/css-toolkit.git"
+  },
+  "author": "Dick Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dick-jo/css-toolkit/issues"
+  },
+  "homepage": "https://github.com/dick-jo/css-toolkit#readme",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {}
+}

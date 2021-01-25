@@ -7,8 +7,7 @@
     <title>Document</title>
 
     <!-- Core toolkit -->
-    <link href="./css/toolkit.css" rel="stylesheet" type="text/css">
-    <!-- Dark toggle -->
+    <link href="../style/toolkit.css" rel="stylesheet" type="text/css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -39,6 +38,12 @@
         .my-tile {
             padding: var(--spsc-4);
             box-shadow: var(--ev-1);
+            user-select: none;
+        }
+        
+        .my-tile h5,
+        .my-tile p {
+            transform: translateZ(56px);
         }
         
         .my-tile:hover {
@@ -84,22 +89,20 @@
     <div class="mgsc-y-4"></div>
 
     <section class="grid gr-auto gr-gap-spsc-4">
-        <div class="my-tile ev-1">
+        <div class="my-tile ev-1" data-tilt data-tilt-reverse="true" data-tilt-max="56" data-tilt-glare="true" data-tilt-max-glare="0.06">
             <h5>Boh, oh boy.</h5>
             <p>What a cheeky fellow!</p>
         </div>
-        <a href="page.html">
-            <div class="my-tile ev-1">
-                <h5>Boh, oh boy.</h5>
-                <p>What a cheeky fellow!</p>
-            </div>
-        </a>
+        <div class="my-tile ev-1" data-tilt data-tilt-reverse="true" data-tilt-max="6" data-tilt-glare="true" data-tilt-max-glare="0.06">
+            <h5>Boh, oh boy.</h5>
+            <p>What a cheeky fellow!</p>
+        </div>
 
     </section>
     <div class="test"></div>
 
     <!-- Currently this script must be included for any dark styles to be applied -->
-    <script src="toggle-dark.js"></script>
+    <script src="../app/toggle-dark.js"></script>
 
 </body>
 
