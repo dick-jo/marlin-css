@@ -1,3 +1,3 @@
-A lightweight CSS toolkit built to assist designer developers.
+# Marlin
+## An extremely opinionated css framework powered by streamlined design systems
 
-Use the `all-in-one.css` code to get the entire toolkit in one file.
