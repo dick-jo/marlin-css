@@ -3,6 +3,8 @@
 * {
     /* Consolidate all line-heights */
     line-height: 1;
+    /* Set default font to monospace so you never need to see Times new Roman again */
+    font-family: monospace;
 }
 
 
