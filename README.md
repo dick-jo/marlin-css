@@ -5,9 +5,7 @@ An extremely opinionated css framework powered by streamlined design systems
 
 `npm install marlin-css`
 
-...and you're looking good 
-
-`@import "marlin.css"`
+`import 'marlin-css/marlin.css'`
 
 
 
