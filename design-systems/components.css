@@ -85,3 +85,11 @@ input[type="text"] {
     box-shadow: var(--ev-8);
     border-color: rgba(0, 0, 0, 0);
 }
+
+[data-theme="dark"] .tile:hover {
+    background-color: var(--ov-3);
+}
+
+[data-theme="dark"] .tile {
+    background-color: var(--ov-1);
+}
