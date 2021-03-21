@@ -3,8 +3,37 @@
 * {
     /* Consolidate all line-heights */
     line-height: 1;
-    /* Set default font to monospace so you never need to see Times new Roman again */
-    font-family: monospace;
+}
+
+
+/* FONT STYLE */
+
+
+/* Override with your preferred styles */
+
+
+/* All fonts are initialised to monospace so you never have to see Times New Roman again */
+
+:root {
+    --font-display: monospace;
+    --font-body: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+}
+
+p,
+.body-1,
+button,
+label,
+a {
+    font-family: var(--font-body);
 }
 
 
@@ -15,11 +44,11 @@
 
 :root {
     --fs-1: 1rem;
-    --fs-2: calc(var(--fs-1) * var(--sc-1));
-    --fs-3: calc(var(--fs-2) * var(--sc-1));
-    --fs-4: calc(var(--fs-3) * var(--sc-1));
-    --fs-5: calc(var(--fs-4) * var(--sc-1));
-    --fs-6: calc(var(--fs-5) * var(--sc-1));
+    --fs-2: calc(var(--fs-1) * var(--scalar-1));
+    --fs-3: calc(var(--fs-2) * var(--scalar-1));
+    --fs-4: calc(var(--fs-3) * var(--scalar-1));
+    --fs-5: calc(var(--fs-4) * var(--scalar-1));
+    --fs-6: calc(var(--fs-5) * var(--scalar-1));
 }
 
 
@@ -28,55 +57,55 @@
 @media screen and (max-width: 360px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-01));
-        --fs-3: calc(var(--fs-2) * var(--sc-01));
-        --fs-4: calc(var(--fs-3) * var(--sc-01));
-        --fs-5: calc(var(--fs-4) * var(--sc-01));
-        --fs-6: calc(var(--fs-5) * var(--sc-01));
+        --fs-2: calc(var(--fs-1) * var(--scalar-01));
+        --fs-3: calc(var(--fs-2) * var(--scalar-01));
+        --fs-4: calc(var(--fs-3) * var(--scalar-01));
+        --fs-5: calc(var(--fs-4) * var(--scalar-01));
+        --fs-6: calc(var(--fs-5) * var(--scalar-01));
     }
 }
 
 @media screen and (min-width: 361px) and (max-width: 864px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-1));
-        --fs-3: calc(var(--fs-2) * var(--sc-1));
-        --fs-4: calc(var(--fs-3) * var(--sc-1));
-        --fs-5: calc(var(--fs-4) * var(--sc-1));
-        --fs-6: calc(var(--fs-5) * var(--sc-1));
+        --fs-2: calc(var(--fs-1) * var(--scalar-1));
+        --fs-3: calc(var(--fs-2) * var(--scalar-1));
+        --fs-4: calc(var(--fs-3) * var(--scalar-1));
+        --fs-5: calc(var(--fs-4) * var(--scalar-1));
+        --fs-6: calc(var(--fs-5) * var(--scalar-1));
     }
 }
 
 @media screen and (min-width: 361px) and (max-width: 864px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-1));
-        --fs-3: calc(var(--fs-2) * var(--sc-1));
-        --fs-4: calc(var(--fs-3) * var(--sc-1));
-        --fs-5: calc(var(--fs-4) * var(--sc-1));
-        --fs-6: calc(var(--fs-5) * var(--sc-1));
+        --fs-2: calc(var(--fs-1) * var(--scalar-1));
+        --fs-3: calc(var(--fs-2) * var(--scalar-1));
+        --fs-4: calc(var(--fs-3) * var(--scalar-1));
+        --fs-5: calc(var(--fs-4) * var(--scalar-1));
+        --fs-6: calc(var(--fs-5) * var(--scalar-1));
     }
 }
 
 @media screen and (min-width: 865px) and (max-width: 1366px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-2));
-        --fs-3: calc(var(--fs-2) * var(--sc-2));
-        --fs-4: calc(var(--fs-3) * var(--sc-2));
-        --fs-5: calc(var(--fs-4) * var(--sc-2));
-        --fs-6: calc(var(--fs-5) * var(--sc-2));
+        --fs-2: calc(var(--fs-1) * var(--scalar-2));
+        --fs-3: calc(var(--fs-2) * var(--scalar-2));
+        --fs-4: calc(var(--fs-3) * var(--scalar-2));
+        --fs-5: calc(var(--fs-4) * var(--scalar-2));
+        --fs-6: calc(var(--fs-5) * var(--scalar-2));
     }
 }
 
 @media screen and (min-width: 1361px) {
      :root {
         --fs-1: 1rem;
-        --fs-2: calc(var(--fs-1) * var(--sc-3));
-        --fs-3: calc(var(--fs-2) * var(--sc-3));
-        --fs-4: calc(var(--fs-3) * var(--sc-3));
-        --fs-5: calc(var(--fs-4) * var(--sc-3));
-        --fs-6: calc(var(--fs-5) * var(--sc-3));
+        --fs-2: calc(var(--fs-1) * var(--scalar-3));
+        --fs-3: calc(var(--fs-2) * var(--scalar-3));
+        --fs-4: calc(var(--fs-3) * var(--scalar-3));
+        --fs-5: calc(var(--fs-4) * var(--scalar-3));
+        --fs-6: calc(var(--fs-5) * var(--scalar-3));
     }
 }
 
@@ -87,7 +116,8 @@
 p,
 .body-1,
 button,
-label {
+label,
+a {
     font-size: calc(var(--fs-2) * 0.8);
 }
 

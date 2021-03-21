@@ -1,7 +1,8 @@
 /* BORDERS */
 
 :root {
-    --thickness: calc(var(--spsc-1) * 0.24);
+    /* --thickness: calc(var(--sc-1) * 0.24); */
+    --thickness: 1px;
     --border: var(--thickness) solid var(--neutral);
 }
 
@@ -111,50 +112,50 @@ hr {
     border-radius: var(--sp-12);
 }
 
-.br-spsc-1 {
-    border-radius: var(--spsc-1);
+.br-sc-1 {
+    border-radius: var(--sc-1);
 }
 
-.br-spsc-2 {
-    border-radius: var(--spsc-2);
+.br-sc-2 {
+    border-radius: var(--sc-2);
 }
 
-.br-spsc-3 {
-    border-radius: var(--spsc-3);
+.br-sc-3 {
+    border-radius: var(--sc-3);
 }
 
-.br-spsc-4 {
-    border-radius: var(--spsc-4);
+.br-sc-4 {
+    border-radius: var(--sc-4);
 }
 
-.br-spsc-5 {
-    border-radius: var(--spsc-5);
+.br-sc-5 {
+    border-radius: var(--sc-5);
 }
 
-.br-spsc-6 {
-    border-radius: var(--spsc-6);
+.br-sc-6 {
+    border-radius: var(--sc-6);
 }
 
-.br-spsc-7 {
-    border-radius: var(--spsc-7);
+.br-sc-7 {
+    border-radius: var(--sc-7);
 }
 
-.br-spsc-8 {
-    border-radius: var(--spsc-8);
+.br-sc-8 {
+    border-radius: var(--sc-8);
 }
 
-.br-spsc-9 {
-    border-radius: var(--spsc-9);
+.br-sc-9 {
+    border-radius: var(--sc-9);
 }
 
-.br-spsc-10 {
-    border-radius: var(--spsc-10);
+.br-sc-10 {
+    border-radius: var(--sc-10);
 }
 
-.br-spsc-11 {
-    border-radius: var(--spsc-11);
+.br-sc-11 {
+    border-radius: var(--sc-11);
 }
 
-.br-spsc-12 {
-    border-radius: var(--spsc-12);
+.br-sc-12 {
+    border-radius: var(--sc-12);
 }

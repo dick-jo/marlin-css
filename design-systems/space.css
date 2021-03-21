@@ -2,13 +2,13 @@
 
 :root {
     /* Perfect Fourth */
-    --sc-1: 1.333;
+    --scalar-1: 1.333;
     /* Perfect Fifth */
-    --sc-2: 1.500;
+    --scalar-2: 1.500;
     /* Fibonacci Golden Ratio */
-    --sc-3: 1.618;
+    --scalar-3: 1.618;
     /* Major Third */
-    --sc-01: 1.250;
+    --scalar-01: 1.250;
 }
 
 :root {
@@ -47,68 +47,68 @@
 
 @media screen and (max-width: 360px) {
      :root {
-        --spsc-1: var(--sp-base);
-        --spsc-2: calc(var(--spsc-1) * var(--sc-01));
-        --spsc-3: calc(var(--spsc-2) * var(--sc-01));
-        --spsc-4: calc(var(--spsc-3) * var(--sc-01));
-        --spsc-5: calc(var(--spsc-4) * var(--sc-01));
-        --spsc-6: calc(var(--spsc-5) * var(--sc-01));
-        --spsc-7: calc(var(--spsc-6) * var(--sc-01));
-        --spsc-8: calc(var(--spsc-7) * var(--sc-01));
-        --spsc-9: calc(var(--spsc-8) * var(--sc-01));
-        --spsc-10: calc(var(--spsc-9) * var(--sc-01));
-        --spsc-11: calc(var(--spsc-10) * var(--sc-01));
-        --spsc-12: calc(var(--spsc-11) * var(--sc-01));
+        --sc-1: var(--sp-base);
+        --sc-2: calc(var(--sc-1) * var(--scalar-01));
+        --sc-3: calc(var(--sc-2) * var(--scalar-01));
+        --sc-4: calc(var(--sc-3) * var(--scalar-01));
+        --sc-5: calc(var(--sc-4) * var(--scalar-01));
+        --sc-6: calc(var(--sc-5) * var(--scalar-01));
+        --sc-7: calc(var(--sc-6) * var(--scalar-01));
+        --sc-8: calc(var(--sc-7) * var(--scalar-01));
+        --sc-9: calc(var(--sc-8) * var(--scalar-01));
+        --sc-10: calc(var(--sc-9) * var(--scalar-01));
+        --sc-11: calc(var(--sc-10) * var(--scalar-01));
+        --sc-12: calc(var(--sc-11) * var(--scalar-01));
     }
 }
 
 @media screen and (min-width: 361px) and (max-width: 864px) {
      :root {
-        --spsc-1: var(--sp-base);
-        --spsc-2: calc(var(--spsc-1) * var(--sc-1));
-        --spsc-3: calc(var(--spsc-2) * var(--sc-1));
-        --spsc-4: calc(var(--spsc-3) * var(--sc-1));
-        --spsc-5: calc(var(--spsc-4) * var(--sc-1));
-        --spsc-6: calc(var(--spsc-5) * var(--sc-1));
-        --spsc-7: calc(var(--spsc-6) * var(--sc-1));
-        --spsc-8: calc(var(--spsc-7) * var(--sc-1));
-        --spsc-9: calc(var(--spsc-8) * var(--sc-1));
-        --spsc-10: calc(var(--spsc-9) * var(--sc-1));
-        --spsc-11: calc(var(--spsc-10) * var(--sc-1));
-        --spsc-12: calc(var(--spsc-11) * var(--sc-1));
+        --sc-1: var(--sp-base);
+        --sc-2: calc(var(--sc-1) * var(--scalar-1));
+        --sc-3: calc(var(--sc-2) * var(--scalar-1));
+        --sc-4: calc(var(--sc-3) * var(--scalar-1));
+        --sc-5: calc(var(--sc-4) * var(--scalar-1));
+        --sc-6: calc(var(--sc-5) * var(--scalar-1));
+        --sc-7: calc(var(--sc-6) * var(--scalar-1));
+        --sc-8: calc(var(--sc-7) * var(--scalar-1));
+        --sc-9: calc(var(--sc-8) * var(--scalar-1));
+        --sc-10: calc(var(--sc-9) * var(--scalar-1));
+        --sc-11: calc(var(--sc-10) * var(--scalar-1));
+        --sc-12: calc(var(--sc-11) * var(--scalar-1));
     }
 }
 
 @media screen and (min-width: 865px) and (max-width: 1366px) {
      :root {
-        --spsc-1: var(--sp-base);
-        --spsc-2: calc(var(--spsc-1) * var(--sc-2));
-        --spsc-3: calc(var(--spsc-2) * var(--sc-2));
-        --spsc-4: calc(var(--spsc-3) * var(--sc-2));
-        --spsc-5: calc(var(--spsc-4) * var(--sc-2));
-        --spsc-6: calc(var(--spsc-5) * var(--sc-2));
-        --spsc-7: calc(var(--spsc-6) * var(--sc-2));
-        --spsc-8: calc(var(--spsc-7) * var(--sc-2));
-        --spsc-9: calc(var(--spsc-8) * var(--sc-2));
-        --spsc-10: calc(var(--spsc-9) * var(--sc-2));
-        --spsc-11: calc(var(--spsc-10) * var(--sc-2));
-        --spsc-12: calc(var(--spsc-11) * var(--sc-2));
+        --sc-1: var(--sp-base);
+        --sc-2: calc(var(--sc-1) * var(--scalar-2));
+        --sc-3: calc(var(--sc-2) * var(--scalar-2));
+        --sc-4: calc(var(--sc-3) * var(--scalar-2));
+        --sc-5: calc(var(--sc-4) * var(--scalar-2));
+        --sc-6: calc(var(--sc-5) * var(--scalar-2));
+        --sc-7: calc(var(--sc-6) * var(--scalar-2));
+        --sc-8: calc(var(--sc-7) * var(--scalar-2));
+        --sc-9: calc(var(--sc-8) * var(--scalar-2));
+        --sc-10: calc(var(--sc-9) * var(--scalar-2));
+        --sc-11: calc(var(--sc-10) * var(--scalar-2));
+        --sc-12: calc(var(--sc-11) * var(--scalar-2));
     }
 }
 
 @media screen and (min-width: 1361px) {
      :root {
-        --spsc-1: var(--sp-base);
-        --spsc-2: calc(var(--spsc-1) * var(--sc-3));
-        --spsc-3: calc(var(--spsc-2) * var(--sc-3));
-        --spsc-4: calc(var(--spsc-3) * var(--sc-3));
-        --spsc-5: calc(var(--spsc-4) * var(--sc-3));
-        --spsc-6: calc(var(--spsc-5) * var(--sc-3));
-        --spsc-7: calc(var(--spsc-6) * var(--sc-3));
-        --spsc-8: calc(var(--spsc-7) * var(--sc-3));
-        --spsc-9: calc(var(--spsc-8) * var(--sc-3));
-        --spsc-10: calc(var(--spsc-9) * var(--sc-3));
-        --spsc-11: calc(var(--spsc-10) * var(--sc-3));
-        --spsc-12: calc(var(--spsc-11) * var(--sc-3));
+        --sc-1: var(--sp-base);
+        --sc-2: calc(var(--sc-1) * var(--scalar-3));
+        --sc-3: calc(var(--sc-2) * var(--scalar-3));
+        --sc-4: calc(var(--sc-3) * var(--scalar-3));
+        --sc-5: calc(var(--sc-4) * var(--scalar-3));
+        --sc-6: calc(var(--sc-5) * var(--scalar-3));
+        --sc-7: calc(var(--sc-6) * var(--scalar-3));
+        --sc-8: calc(var(--sc-7) * var(--scalar-3));
+        --sc-9: calc(var(--sc-8) * var(--scalar-3));
+        --sc-10: calc(var(--sc-9) * var(--scalar-3));
+        --sc-11: calc(var(--sc-10) * var(--scalar-3));
+        --sc-12: calc(var(--sc-11) * var(--scalar-3));
     }
 }

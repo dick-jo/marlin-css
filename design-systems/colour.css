@@ -20,14 +20,6 @@
 
 /* INITIALISE */
 
-
-/* @media (prefers-color-scheme: dark) {
-    body {
-        color: var(--dark-text);
-        background-color: var(--dark-background);
-    }
-} */
-
 [data-theme="dark"] {
     --text: var(--dark-text);
     --background: var(--dark-background);

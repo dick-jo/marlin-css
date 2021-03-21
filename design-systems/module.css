@@ -1,0 +1,53 @@
+/* NAVBAR */
+
+
+/* <nav role="navigation" aria-label="main-navigation">
+    <div class="brand">
+        <a href="#">
+        </a>
+    </div>
+
+    <div class="nav-body">
+        <div class="nav-links">
+            <a href="#">
+        </div>
+
+        <div class="nav-actions">
+            <a href="#">
+                <button></button>
+            </a>
+        </div>
+    </div>
+</nav> */
+
+nav {
+    display: flex;
+    padding: var(--sc-1) var(--sc-4);
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    font-size: var(--fs-2);
+}
+
+.nav-body {
+    flex-grow: 1;
+    display: flex;
+}
+
+.nav-body>* {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    flex-grow: 1;
+}
+
+.nav-links>*,
+.nav-actions>* {
+    padding-right: var(--sc-2);
+}

@@ -4,6 +4,7 @@
 /* CAST SHADOWS */
 
 :root {
+    --ev-0: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     --ev-1: 0px calc(var(--sp-1) * 0.32) calc(var(--sp-1) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-1) * 0.12) calc(var(--sp-1) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-1) * 0.12) calc(var(--sp-1) * 0.32) -2px rgba(0, 0, 0, 0.06);
     --ev-2: 0px calc(var(--sp-2) * 0.32) calc(var(--sp-2) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-2) * 0.12) calc(var(--sp-2) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-2) * 0.12) calc(var(--sp-2) * 0.32) -2px rgba(0, 0, 0, 0.06);
     --ev-3: 0px calc(var(--sp-3) * 0.32) calc(var(--sp-3) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-3) * 0.12) calc(var(--sp-3) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-3) * 0.12) calc(var(--sp-3) * 0.32) 0px rgba(0, 0, 0, 0.06);
@@ -18,8 +19,8 @@
     --ev-12: 0px calc(var(--sp-12) * 0.32) calc(var(--sp-12) * 0.4) 0px rgba(0, 0, 0, 0.12), 0px calc(var(--sp-12) * 0.12) calc(var(--sp-12) * 0.16) 0px rgba(0, 0, 0, 0.08), 0px calc(var(--sp-12) * 0.12) calc(var(--sp-12) * 0.32) 8px rgba(0, 0, 0, 0.06);
 }
 
-.ev {
-    box-shadow: var(--ev)
+.ev-0 {
+    box-shadow: var(--ev-0);
 }
 
 .ev-1 {

@@ -49,6 +49,10 @@
     grid-template-columns: repeat(8, 1fr);
 }
 
+.gr-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .gr-cols-4 {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -147,20 +151,20 @@
 
 /* GRID GAPS */
 
-.gr-gap-spsc-1 {
-    grid-gap: var(--spsc-1) var(--spsc-1);
+.gr-gap-sc-1 {
+    grid-gap: var(--sc-1) var(--sc-1);
 }
 
-.gr-gap-spsc-2 {
-    grid-gap: var(--spsc-2) var(--spsc-2);
+.gr-gap-sc-2 {
+    grid-gap: var(--sc-2) var(--sc-2);
 }
 
-.gr-gap-spsc-3 {
-    grid-gap: var(--spsc-3) var(--spsc-3);
+.gr-gap-sc-3 {
+    grid-gap: var(--sc-3) var(--sc-3);
 }
 
-.gr-gap-spsc-4 {
-    grid-gap: var(--spsc-4) var(--spsc-4);
+.gr-gap-sc-4 {
+    grid-gap: var(--sc-4) var(--sc-4);
 }
 
 
