@@ -41,6 +41,12 @@
     display: grid;
 }
 
+.grid-12,
+.gr-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 .gr-cols-12 {
     grid-template-columns: repeat(12, 1fr);
 }
