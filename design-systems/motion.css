@@ -54,26 +54,3 @@
         transform: scale(1);
     }
 }
-
-
-/* SCROLL */
-
-.scroll-in {
-    opacity: 0;
-}
-
-.scroll-in-set {
-    animation-name: scroll-in;
-    animation-duration: 1200ms;
-}
-
-@keyframes scroll-in {
-    from {
-        transform: translateY(120px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
