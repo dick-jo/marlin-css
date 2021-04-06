@@ -47,6 +47,30 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
+.grid-8,
+.gr-8 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-6,
+.gr-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-4,
+.gr-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3,
+.gr-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .gr-cols-12 {
     grid-template-columns: repeat(12, 1fr);
 }
