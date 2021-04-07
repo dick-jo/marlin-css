@@ -80,3 +80,7 @@ body {
 .fill-background {
     background-color: var(--background);
 }
+
+.fill-neutral {
+    background-color: var(--neutral);
+}
