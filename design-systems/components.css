@@ -129,3 +129,17 @@ input[type="text"] {
 [data-theme="dark"] .tile {
     background-color: var(--ov-1);
 }
+
+
+/* STUB */
+
+.stub {
+    /* factor is multiplied against --sp-1 to determine height + width */
+    --factor: 0.56
+}
+
+.stub {
+    width: var(--sc-4);
+    height: calc(var(--sp-1) * var(--factor));
+    min-height: 4px;
+}
