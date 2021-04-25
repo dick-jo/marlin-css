@@ -5,13 +5,9 @@
     line-height: 1;
 }
 
-
 /* FONT STYLE */
 
-
 /* Override with your preferred styles */
-
-
 /* All fonts are initialised to monospace so you never have to see Times New Roman again */
 
 :root {
@@ -36,9 +32,7 @@ a {
     font-family: var(--font-body);
 }
 
-
 /* FONT SIZES */
-
 
 /* FONT SIZES | Default */
 
@@ -109,91 +103,96 @@ a {
     }
 }
 
+/* TYPOGRAPHY ASSIGNMENTS */
 
-/* Set body 1 styling relative to fs-2 (always greater than 1rem)
-...body 1 acts as default font for paragraph text and button labels*/
+/* FONT SIZE FACTORS */
+:root {
+    /* Use factors to universally scale all display and/or body font dimensions, or independently scale any specific tag */
+    --factor-type-display: 1;
+    --factor-type-body: 1;
+    --factor-type-line-height: 1;
+    --factor-type-line-height-display: 1;
+    --factor-type-line-height-body: 1;
+    --factor-type-h1: 1;
+    --factor-type-h2: 1;
+    --factor-type-h3: 1;
+    --factor-type-h4: 1;
+    --factor-type-h5: 1;
+    --factor-type-h6: 1;
+}
+
+/* MASTER VARIABLES */
+:root {
+    --master-h1-size: calc(var(--fs-6) * var(--factor-type-display) * var(--factor-type-h1));
+    --master-h1-line-height: calc(var(--fs-6) * var(--factor-type-display) * var(--factor-type-h1) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h2-size: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h2));
+    --master-h2-line-height: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h2) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display)); 
+    --master-h3-size: calc(var(--fs-4) * var(--factor-type-display) * var(--factor-type-h3));
+    --master-h3-line-height: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h3) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h4-size: calc(var(--fs-3) * var(--factor-type-display) * var(--factor-type-h4));
+    --master-h4-line-height: calc(var(--fs-4) * var(--factor-type-display) * var(--factor-type-h4) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h5-size: calc(var(--fs-2) * var(--factor-type-display) * var(--factor-type-h5));
+    --master-h5-line-height: calc(var(--fs-3) * var(--factor-type-display) * var(--factor-type-h5) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h6-size: calc(var(--fs-1) * var(--factor-type-display) * var(--factor-type-h6));
+    --master-h6-line-height: calc(var(--fs-2) * var(--factor-type-display) * var(--factor-type-h6) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-body-1-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
+    --master-body-1-line-height: calc(var(--fs-3) * 0.88 * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));
+    --master-body-2-size: calc(var(--fs-1) * 0.8 * var(--factor-type-body));
+}
+
+/*  */
+
+h1 {
+    font-size: var(--master-h1-size);
+    line-height: var(--master-h1-line-height);
+}
+
+h2 {
+    font-size: var(--master-h2-size);
+    line-height: var(--master-h2-line-height);
+}
+
+h3 {
+    font-size: var(--master-h3-size);
+    line-height: var(--master-h3-line-height);
+}
+
+h4 {
+    font-size: var(--master-h4-size);
+    line-height: var(--master-h4-line-height);
+}
+
+h5 {
+    font-size: var(--master-h5-size);
+    line-height: var(--master-h5-line-height);
+}
+
+h6 {
+    font-size: var(--master-h6-size);
+    line-height: var(--master-h6-line-height);
+}
+
+/* body 1 size and line-height uses unique relative factors for heuristic adjustment of all body text. This ensures body 1 instances will always be greater than 1rem */
+/* ...body 1 acts as default font for paragraph text and button labels */
 
 p,
 .body-1,
 button,
 label,
 a {
-    font-size: calc(var(--fs-2) * 0.8);
+    font-size: var(--master-body-1-size);
+    line-height: var(--master-body-1-line-height);
 }
 
-h1 {
-    font-size: var(--fs-6);
-}
-
-h2 {
-    font-size: var(--fs-5);
-}
-
-h3 {
-    font-size: var(--fs-4);
-}
-
-h4 {
-    font-size: var(--fs-3);
-}
-
-h5 {
-    font-size: var(--fs-2);
-}
-
-h6 {
-    font-size: var(--fs-1);
-}
-
-
-/* LINE HEIGHTS */
-
-p {
-    line-height: calc(var(--fs-3) * .88);
-}
-
-h1 {
-    line-height: var(--fs-6);
-}
-
-h2 {
-    line-height: var(--fs-5);
-}
-
-h3 {
-    line-height: var(--fs-4);
-}
-
-h4 {
-    line-height: var(--fs-4);
-}
-
-h5 {
-    line-height: var(--fs-3);
-}
-
-h6 {
-    line-height: var(--fs-2);
+.body-2 {
+    font-size: calc(var(--fs-1) * 0.8 * var(--factor-type-body));
+    line-height: calc(var(--fs-2) * 0.88 * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));
 }
 
 caption,
 figcaption,
 label,
 legend {
-    line-height: var(--fs-2);
-}
-
-
-/* FONT WEIGHTS */
-
-label {
-    font-weight: 600;
-}
-
-h5 {
-    font-weight: 500;
-}
-
-h6 {
-    font-weight: 620;
+    font-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
+    line-height: calc(var(--fs-2) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));;
 }
