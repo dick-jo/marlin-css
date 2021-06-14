@@ -27,7 +27,6 @@ body {
     height: 100%;
 }
 
-
 /* Make common inline elements block for more predictable designing */
 
 img,
@@ -42,7 +41,6 @@ object {
     max-width: 100%;
 }
 
-
 /* Maintain aspect ratios when applying max-width */
 
 img,
@@ -52,13 +50,11 @@ canvas {
     height: auto;
 }
 
-
 /* Clear nav list styling to neatly handly nav links via lists */
 
 nav ul {
     list-style: none;
 }
-
 
 /* Turn wrap on by default because why not */
 
@@ -66,14 +62,12 @@ pre {
     white-space: pre-wrap;
 }
 
-
 /* Strip anchor styles */
 
 a {
     text-decoration: inherit;
     color: inherit;
 }
-
 
 /* BREAKPOINTS */
 
@@ -84,3 +78,5 @@ a {
     --bp-2: 1366px;
     --bp-3: 1920px;
 }
+
+/* This is a new addition to the file */
